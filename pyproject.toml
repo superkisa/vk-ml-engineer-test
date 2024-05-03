@@ -1,3 +1,6 @@
+# cspell: dictionaries python
+# cspell: words pyupgrade tryceratops FURB
+
 [tool.ruff]
 src = ["src"]
 line-length = 100
