@@ -1,5 +1,10 @@
 words:
   - ipynb
-
+  - mlruns
 dictionaries:
   - python
+languageSettings:
+  - allowCompoundWords: true
+    caseSensitive: false
+    enabled: true
+    languageId: "*"
