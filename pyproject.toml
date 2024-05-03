@@ -1,0 +1,35 @@
+[tool.ruff]
+src = ["src"]
+line-length = 100
+target-version = "py311"
+include = ["*.py", "*.pyi", "**/pyproject.toml", "*.ipynb"]
+
+[tool.ruff.lint]
+per-file-ignores = {"*.ipynb" = ["F401", "PLE1142"]}
+select = [
+    # "D",   # pydocstyle
+    # "ANN", # flake8-annotations
+    "TCH", # flake8-type-checking
+    "FBT", # flake8-boolean-trap
+
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "UP",   # pyupgrade
+    "I",    # isort
+    "PL",   # pylint
+    "RUF",  # ruff-specific
+    "N",    # pep8-naming
+    "C4",   # flake8-comprehensions
+    "B",    # flake8-bugbear
+    "PTH",  # flake8-use-pathlib
+    "TRY",  # tryceratops
+    "PERF", # Perflint 
+    "FURB", # refurb 
+    "PT",   # flake8-pytest-style
+]
+ignore = [
+    "RUF001", # ambiguous cyrillic letters
+    "RUF002", # ambiguous cyrillic letters
+    "ANN101", # missing-type-self #? deprecated
+    "D202",   # no-blank-line-after-function
+]
